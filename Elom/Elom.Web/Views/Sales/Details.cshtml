@@ -1,8 +1,12 @@
 ﻿@model Elom.Web.ViewModels.SalesOrderViewModel
+@using System.Activities.Expressions
+@using System.Web.Script.Serialization;
 
 @{
     ViewBag.Title = "Details";
 }
+
+@{ string data = new JavaScriptSerializer().Serialize(Model); }
 
 @section scripts
 {
@@ -11,7 +15,7 @@
     <script src="~/Scripts/salesorderviewmodel.js"></script>
     
     <script type="text/javascript">
-        
+        var salesOrderViewModel = new SalesOrderViewModel(@Html.Raw(data));
     </script>
 }
 
