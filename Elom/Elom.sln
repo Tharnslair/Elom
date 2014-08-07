@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elom.Web", "Elom.Web\Elom.Web.csproj", "{15E63C5E-8329-4FC2-80EB-7AF8A8BA2E7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elom.Model", "Elom.Model\Elom.Model.csproj", "{BC57F6FE-DD4B-4960-B6B4-85F239168D04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elom.DataLayer", "Elom.DataLayer\Elom.DataLayer.csproj", "{F0075E75-5686-4039-9089-B7154D700DFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15E63C5E-8329-4FC2-80EB-7AF8A8BA2E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E63C5E-8329-4FC2-80EB-7AF8A8BA2E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E63C5E-8329-4FC2-80EB-7AF8A8BA2E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E63C5E-8329-4FC2-80EB-7AF8A8BA2E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC57F6FE-DD4B-4960-B6B4-85F239168D04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC57F6FE-DD4B-4960-B6B4-85F239168D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC57F6FE-DD4B-4960-B6B4-85F239168D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC57F6FE-DD4B-4960-B6B4-85F239168D04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0075E75-5686-4039-9089-B7154D700DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0075E75-5686-4039-9089-B7154D700DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0075E75-5686-4039-9089-B7154D700DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0075E75-5686-4039-9089-B7154D700DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
