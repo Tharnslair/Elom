@@ -1,3 +1,5 @@
+using Elom.Model;
+
 namespace Elom.DataLayer.Migrations
 {
     using System;
@@ -16,18 +18,14 @@ namespace Elom.DataLayer.Migrations
 
         protected override void Seed(Elom.DataLayer.SalesContext context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+            // seeding the database
+            context.SalesOrders.AddOrUpdate(
+                so => so.CustomerName,
+                new SalesOrder{CustomerName = "Han", PONumber = "0122"},
+                new SalesOrder{CustomerName = "Luke", PONumber = "0124"},
+                new SalesOrder{CustomerName = "Lando", PONumber = "0125"},
+                new SalesOrder{CustomerName = "Chewy", PONumber = "0126"}
+                );
         }
     }
 }
