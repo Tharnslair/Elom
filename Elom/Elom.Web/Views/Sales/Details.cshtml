@@ -1,10 +1,24 @@
-﻿@model Elom.Model.SalesOrder
+﻿@model Elom.Web.ViewModels.SalesOrderViewModel
 
 @{
     ViewBag.Title = "Details";
 }
 
+@section scripts
+{
+    <script src="~/Scripts/knockout-3.1.0.js"></script>
+    <script src="~/Scripts/knockout.mapping-latest.js"></script>
+    <script src="~/Scripts/salesorderviewmodel.js"></script>
+    
+    <script type="text/javascript">
+        
+    </script>
+}
+
 <h2>Details</h2>
+
+@*Added Message to client*@
+<p>@Html.DisplayFor(model => model.MessageToClient)</p>
 
 <div>
     <h4>SalesOrder</h4>

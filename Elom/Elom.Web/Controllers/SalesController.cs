@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using Elom.Model;
 using Elom.DataLayer;
+using Elom.Web.ViewModels;
 
 namespace Elom.Web.Controllers
 {
@@ -36,7 +37,16 @@ namespace Elom.Web.Controllers
             {
                 return HttpNotFound();
             }
-            return View(salesOrder);
+
+            // instantiate SalesModelView
+            SalesOrderViewModel salesOrderViewModel = new SalesOrderViewModel();
+
+            salesOrderViewModel.SalesOrderId = salesOrder.SalesOrderId;
+            salesOrderViewModel.CustomerName = salesOrder.CustomerName;
+            salesOrderViewModel.PONumber = salesOrder.PONumber;
+            salesOrderViewModel.MessageToClient = "I originated from the viewmodel, rather than the model!!!";
+
+            return View(salesOrderViewModel);
         }
 
         public ActionResult Create()
