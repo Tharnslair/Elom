@@ -51,7 +51,9 @@ namespace Elom.Web.Controllers
 
         public ActionResult Create()
         {
-            return View();
+            SalesOrderViewModel salesOrderViewModel = new SalesOrderViewModel();
+
+            return View(salesOrderViewModel);
         }
 
 
